@@ -75,7 +75,7 @@ module PlatoDevice
     end
 
     def print(s)
-      s.to_s unless s.instance_of?(String)
+      s = s.to_s unless s.instance_of?(String)
       s.each_char {|c| putc c}
     end
 
